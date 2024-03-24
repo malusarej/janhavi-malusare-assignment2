@@ -1,0 +1,68 @@
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.grid {
+  display: grid;
+  grid-template-columns: repeat(40, 20px);
+  grid-template-rows: auto;
+  gap: 1px;
+  left: 30%;
+  position: relative;
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  border: 1px solid lawngreen;
+}
+
+.cell.alive {
+  background-color: aqua; /* Color of alive cells */
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.living-cells-count {
+  margin-top: 10px; 
+  color: aqua; 
+  position: relative;
+}
+
+.submit {
+  color: aqua;
+}
+
+.variables {
+  position: relative;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+button {
+  background-color: lawngreen;
+  border-radius: 4px;
+  margin-bottom: 10px
+}
+
+.controls {
+  position: relative; 
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.reset {
+  margin-left: 5px;
+}
+
+.error-message {
+  margin-top: 5px;
+  color: lawngreen; 
+  position: relative;
+  margin-bottom: 5px;
+}
